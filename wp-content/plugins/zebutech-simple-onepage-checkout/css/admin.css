@@ -1,0 +1,40 @@
+/* 
+    Document   : admin
+    Created on : Apr 3, 2016, 1:34:01 PM
+    Author     : syedazharuddin
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+table.form-table td fieldset{
+    width: 600px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #0073aa;
+}
+table.form-table td fieldset.zebutech-sop-block label{
+    width:250px;
+}
+fieldset.zebutech-sop-block input, fieldset.zebutech-sop-block select{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 38px;
+    width: 344px;
+}
+.zebutech-sop-block legend{
+    font-weight: bold;
+}
+span.tip{
+    display: block;
+        text-align: right;
+
+        margin-bottom: 10px;
+    margin-right: 181px;
+    font-size: 13px;
+    color: #ccc;
+}
