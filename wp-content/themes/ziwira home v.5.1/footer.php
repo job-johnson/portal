@@ -11,10 +11,10 @@
 ?>
 <?php
 $home = 'http://ziwira.com';
-$globalnews = '#';
-$environment = 'http://environment.ziwira.com/';
-$lifestyle = 'http://lifestyle.ziwira.com/';
-$food = 'http://food.ziwira.com/';
+$globalnews = get_page_link(2086);//'#';
+$environment = get_page_link(2655);//'http://environment.ziwira.com/';
+$lifestyle = get_page_link(2678);//'http://lifestyle.ziwira.com/';
+$food = get_page_link(2676);//'http://food.ziwira.com/';
 $fashion = 'http://fashion.ziwira.com/';
 $travel = 'http://travel.ziwira.com/';
 $realestate = 'http://realestate.ziwira.com/';
@@ -69,17 +69,17 @@ $jobs = 'http://jobs.ziwira.com/';
               <div class="footer_bottom_inner clearfix">
                   <div class="category-links">
                           <ul>
-                              <li><a href="<?php echo $magazine ?>"><span class="icon_comm magazine-bg"><i class="icon-magazine"></i></span><span class="menu_text">magazine</span></a></li>
+                          <?php /*<li><a href="<?php echo $magazine ?>"><span class="icon_comm magazine-bg"><i class="icon-magazine"></i></span><span class="menu_text">magazine</span></a></li>**/?>
                               <li><a href="<?php echo $globalnews ?>"><span class="icon_comm news-bg"><i class="icon-news"></i></span><span class="menu_text">trending now</span></a></li>
                               <li><a href="<?php echo $environment ?>"><span class="icon_comm environment-bg"><i class="icon-environment"></i></span><span class="menu_text">environment</span></a></li>
                               <li><a href="<?php echo $lifestyle ?>"><span class="icon_comm lifestyle-bg"><i class="icon-lifestyle"></i></span><span class="menu_text">lifestyle</span></a></li>
                               <li><a href="<?php echo $food ?>"><span class="icon_comm food-bg"><i class="icon-food"></i></span><span class="menu_text">food</span></a></li>
-                              <li><a href="<?php echo $fashion ?>"><span class="icon_comm fashion-bg"><i class="icon-fashion"></i></span><span class="menu_text">fashion</span></a></li>
+                            <?php /**  <li><a href="<?php echo $fashion ?>"><span class="icon_comm fashion-bg"><i class="icon-fashion"></i></span><span class="menu_text">fashion</span></a></li>
                               <li><a href="<?php echo $travel ?>"><span class="icon_comm travel-bg"><i class="icon-travel"></i></span><span class="menu_text">travel</span></a></li>
                               <li><a href="<?php echo $realestate ?>"><span class="icon_comm real-estate-bg"><i class="icon-real-estate"></i></span><span class="menu_text">real estate</span></a></li>
                               <li><a href="<?php echo $finance ?>"><span class="icon_comm finance-bg"><i class="icon-finance"></i></span><span class="menu_text">finance</span></a></li>
                               <li><a href="<?php echo $ecotech ?>"><span class="icon_comm eco-tech-bg"><i class="icon-eco-tech"></i></span><span class="menu_text">eco tech</span></a></li>
-                              <li><a href="<?php echo $auto ?>"><span class="icon_comm auto-bg"><i class="icon-auto"></i></span><span class="menu_text">auto</span></a></li>
+                              <li><a href="<?php echo $auto ?>"><span class="icon_comm auto-bg"><i class="icon-auto"></i></span><span class="menu_text">auto</span></a></li>**/?>
                               <!--<li style="display:none"><a href="<?php echo $jobs ?>"><span class="icon_comm jobs-bg"><i class="icon-jobs"></i></span><span class="menu_text">Green Jobs</span></a></li>-->
 
                           </ul>

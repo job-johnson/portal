@@ -1,11 +1,13 @@
 <?php
 /**
- * Template Name: Trending Now
+ * Template Name: Lifestyle Landing
  *
  * @package ziwira
  * @since ziwira 5.0
  */
-get_header(); ?>
+get_header();
+
+?>
 
 
 <div id="maincontent">
@@ -23,10 +25,10 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1470624706773-3');
    <div id="two-column" class="clearfix">
     <div class="new-title">
       <span class="title_inner clearfix">
-                    <span class="title_text">Ziwira<i class="icon-right-arrow"></i>Trending Now</span>
+                    <span class="title_text">Ziwira<i class="icon-right-arrow"></i>Lifestyle</span>
                 </span>
                 <span class="clearfix">
-                  <span class="title_text"><span class="icon_comm"><i class="icon-news"></i></span>Trending Now</span>
+                  <span class="title_text"><span class="icon_comm"><i class="icon-lifestyle"></i></span>Lifestyle</span>
                 </span>
     </div>
 
@@ -34,7 +36,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1470624706773-3');
   <div id="two-column" class="clearfix">
     <div id="left-block" class="pull-left bg-color top-left">
             <div class="top-ar-container">
-            <?php echo do_shortcode('[wpv-view name="landing-first"]'); ?>
+            <?php echo do_shortcode('[wpv-view name="lifestyle-landing-first"]'); ?>
 
             </div>
     </div>
@@ -78,7 +80,7 @@ $blogRollId = $blogRollPosts[0]->ID;
   </div>
 
   <div id="two-column" class="clearfix">
-    <?php echo do_shortcode('[wpv-view name="landing-all"]'); ?>
+    <?php echo do_shortcode('[wpv-view name="lifestyle-landing-all"]'); ?>
   </div>
 
   <div id="two-column" class="clearfix">

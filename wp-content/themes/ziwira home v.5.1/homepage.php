@@ -15,7 +15,7 @@ jQuery(document).ajaxStop(function(){
 </script>
 <div id="maincontent">
   <div class="ad-wrapper ad-center-align top-ad">
-      
+
 <!-- /100058245/Home_ATF_LB_728x90 -->
 <div id='div-gpt-ad-1470624706773-0' style='height:90px; width:728px;'>
 <script>
@@ -35,9 +35,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1470624706773-0');
         <div>
           <div class='blocks home_blocks food_block'>
           <h3><span class="icon_comm food-bg"><i class="icon-food"></i></span><span class="header-title">Food</span></h3>
-          <ul class="article_listing_block">
-
-          </ul>
+            <?php echo do_shortcode('[wpv-view name="food-home-page-articles"]');?>
           </div>
         </div>
         <div class='col-md-12 col-sm-6 col-xs-12 blocks home_blocks env_block'>
@@ -45,29 +43,28 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1470624706773-0');
 
            <div class='col-md-7 blocks home_blocks env_block_right'>
            <div id="envslider" class="flexslider">
-             <ul class="slides">
-             </ul>
+
+                 <?php echo do_shortcode('[wpv-view name="environment-home-page-articles"]');?>
+
            </div>
            </div>
         </div>
       </div>
       <div id="right-block" class="pull-right sidebar top-right">
         <div class="ad-wrapper" style="margin-bottom:22px;">
-        
+
  <!-- /100058245/Home_ATF_LR1_336x280 -->
 <div id='div-gpt-ad-1470624706773-1' style='height:280px; width:336px;'>
 <script>
 googletag.cmd.push(function() { googletag.display('div-gpt-ad-1470624706773-1'); });
 </script>
 </div>
-        
+
         </div>
 
         <div class='col-md-5 col-sm-6 col-xs-12 small_block blocks home_blocks life lifestyle_block'>
         <h3><span class="icon_comm lifestyle-bg"><i class="icon-lifestyle"></i></span><span class="header-title">Lifestyle</span></h3>
-          <ul class="article_listing_block">
-
-          </ul>
+          <?php echo do_shortcode('[wpv-view name="lifestyle-home-page-articles"]');?>
         </div>
 
         <div class="photo">
@@ -75,12 +72,13 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1470624706773-1');
           <a href=""><img src="<?php bloginfo('template_directory'); ?>/assets/images/pc.jpg"/></a>
         </div>
 
-        <div class='col-md-5 col-sm-6 col-xs-12 small_block blocks home_blocks fas fas_block'>
+
+      <!--  <div class='col-md-5 col-sm-6 col-xs-12 small_block blocks home_blocks fas fas_block'>
         <h3><span class="icon_comm fashion-bg"><i class="icon-fashion"></i></span><span class="header-title">Fashion</span></h3>
           <ul class="article_listing_block">
 
           </ul>
-        </div>
+        </div>-->
       </div>
     </div>
 
@@ -98,7 +96,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1470624706773-2');
   </div>
     </div>
 
-    <div id="two-column" class="clearfix" style="margin-bottom: 30px;">
+  <!--  <div id="two-column" class="clearfix" style="margin-bottom: 30px;">
       <div class="col-md-6" style="width: 49%;float: left;margin-right: 25px;">
         <div class="col-md-12 col-sm-12 col-xs-12 small_block blocks home_blocks ecotech_block">
           <h3><span class="icon_comm eco-tech-bg"><i class="icon-eco-tech"></i></span><span class="header-title">Eco Tech</span></h3>
@@ -142,7 +140,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1470624706773-2');
             </ul>
         </div>
       </div>
-    </div>
+    </div>-->
 
 </div>
 <?php get_footer(); ?>

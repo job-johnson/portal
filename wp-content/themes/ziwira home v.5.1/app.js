@@ -1,6 +1,18 @@
 //carousel code
 jQuery(document).ready(function(){
 
+  jQuery('#envslider').flexslider({
+    animation: "fade",
+    controlNav: false,
+    slideshowSpeed: 5000,
+    animationLoop: true,
+    animationSpeed	: 500,
+  //  sync: "#carousel",
+    start: function(slider){
+      jQuery('body').removeClass('loading');
+    }
+  });
+
   var newscarouselObj = jQuery('#newscarousel').flexslider({
               animation: "slide",
               controlNav: true,
@@ -27,16 +39,16 @@ jQuery(document).ready(function(){
             });
 
 });
-
+/**
 //api call for environment slider
 function RemoveHTMLTags(html) {
       var regX = /(<([^>]+)>)/ig;
       return html.replace(regX, "")
-}
+}**/
 
-
+/**
   jQuery.ajax({
-    type: 'GET',
+    type: 'GET',-->
         url: 'https://t5i5zt0tra.execute-api.us-east-1.amazonaws.com/prod/homepage?path=food&limit=4',
         success: function(e){
 
@@ -372,7 +384,7 @@ function RemoveHTMLTags(html) {
           error : function (e){
           }
   });
-
+**/
   // jQuery(document).ajaxStop(function(){
   //   jQuery("img.lazy").lazyload({
   //       effect: "fadeIn"

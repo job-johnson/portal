@@ -12,10 +12,10 @@
 <html <?php language_attributes(); ?> class="no-js">
 <?php
 $home = 'http://ziwira.com';
-$globalnews = 'http://ziwira.com/trending-now/';
-$environment = 'http://environment.ziwira.com/';
-$lifestyle = 'http://lifestyle.ziwira.com/';
-$food = 'http://food.ziwira.com/';
+$globalnews = get_page_link(2086);//'#';
+$environment = get_page_link(2655);//'http://environment.ziwira.com/';
+$lifestyle = get_page_link(2678);//'http://lifestyle.ziwira.com/';
+$food = get_page_link(2676);//'http://food.ziwira.com/';
 $fashion = 'http://fashion.ziwira.com/';
 $travel = 'http://travel.ziwira.com/';
 $realestate = 'http://realestate.ziwira.com/';
@@ -113,7 +113,7 @@ $jobs = 'http://jobs.ziwira.com/';
 
                                 <!--<li><i class="icon icon-magazine"></i></li>-->
 <li><i class="icon-market"></i><a href="https://ziwirastore.com/" style="border-right: 0px solid #fff;border-radius:0;">Marketplace</a></li>
-<li><i class="icon-jobs"></i><a href="http://ziwira.com/green-businesses/" style="border-right: 0px solid #fff;border-radius:0;">Green Businesses</a></li>                            
+<li><i class="icon-jobs"></i><a href="http://ziwira.com/green-businesses/" style="border-right: 0px solid #fff;border-radius:0;">Green Businesses</a></li>
                           </ul>
                     </div>
                   </div>
@@ -127,19 +127,19 @@ $jobs = 'http://jobs.ziwira.com/';
 	               <li><a href="<?php echo $environment ?>"><span class="icon_comm environment-bg"><i class="icon-environment"></i></span><span class="menu_text">Environment</span></a></li>
 	               <li><a href="<?php echo $lifestyle ?>"><span class="icon_comm lifestyle-bg"><i class="icon-lifestyle"></i></span><span class="menu_text">Lifestyle</span></a></li>
 	               <li><a href="<?php echo $food ?>"><span class="icon_comm food-bg"><i class="icon-food"></i></span><span class="menu_text">Food</span></a></li>
-	               <li><a href="<?php echo $fashion ?>"><span class="icon_comm fashion-bg"><i class="icon-fashion"></i></span><span class="menu_text">Fashion</span></a></li>
+	               <?php /**<li><a href="<?php echo $fashion ?>"><span class="icon_comm fashion-bg"><i class="icon-fashion"></i></span><span class="menu_text">Fashion</span></a></li>
 	               <li><a href="<?php echo $travel ?>"><span class="icon_comm travel-bg"><i class="icon-travel"></i></span><span class="menu_text">Travel</span></a></li>
 	               <li><a href="<?php echo $realestate ?>"><span class="icon_comm real-estate-bg"><i class="icon-real-estate"></i></span><span class="menu_text">Real Estate</span></a></li>
 	               <li><a href="<?php echo $finance ?>"><span class="icon_comm finance-bg"><i class="icon-finance"></i></span><span class="menu_text">Finance</span></a></li>
 	               <li><a href="<?php echo $ecotech ?>"><span class="icon_comm eco-tech-bg"><i class="icon-eco-tech"></i></span><span class="menu_text">Eco Tech</span></a></li>
-	               <li><a href="<?php echo $auto ?>"><span class="icon_comm auto-bg"><i class="icon-auto"></i></span><span class="menu_text">Auto</span></a></li>
+	               <li><a href="<?php echo $auto ?>"><span class="icon_comm auto-bg"><i class="icon-auto"></i></span><span class="menu_text">Auto</span></a></li>**/?>
 	             </ul>
               </div><!-- category_menu end -->
           </div>
 
              <div class="menu_sec_bottom clearfix">  <!-- header menu bottom starts here  -->
               <div class="search_box"><!-- search_box start -->
-              
+
 <form action="<?php echo $home ?>/search" onsubmit="if(document.getElementById('q').value == '') return false;">
                   <div class="input-group">
                       <input type="text" name="q" id="q" class="form-control" autocomplete="off" placeholder="Search on Ziwira">
